@@ -8,6 +8,7 @@ const INTERVAL = 4 * 60 * 60 * 1000;
 
 /* run data scraper */
 const runDataScraper = () => {
+  // eslint-disable-next-line no-console
   console.log("Running data scraper...");
   PythonShell.run("src/scraper/xgdata_scraper.py", undefined);
 };
