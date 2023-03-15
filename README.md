@@ -1,6 +1,6 @@
 # FPL Frog - Back end FPL web application
 
-This is the FPL Frog back end web application for FPL, built with Node and Typescript, Python and FireBase.
+This is the FPL Frog back end web application for FPL, built with Node and TypeScript, Python and FireBase.
 
 This server runs web scraping services that collect statistical data from across several sources, including xG data, that can be synced with users' FPL teams.
 
