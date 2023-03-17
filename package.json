@@ -1,6 +1,6 @@
 {
   "name": "fplfrog-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "FPL Frog data server and web scraper",
   "main": "dist/index.js",
   "scripts": {

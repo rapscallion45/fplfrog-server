@@ -7,10 +7,17 @@ const FIRST_RUN_TIMEOUT = 60 * 60 * 1000;
 const INTERVAL = 4 * 60 * 60 * 1000;
 
 /* run data scraper */
-const runDataScraper = () => {
+const runDataScraper = async () => {
   // eslint-disable-next-line no-console
   console.log("Running data scraper...");
-  PythonShell.run("src/scraper/xgdata_scraper.py", undefined);
+
+  /* run data scraper Python script */
+  await PythonShell.run("src/scraper/xgdata_scraper.py", undefined);
+
+  // eslint-disable-next-line no-console
+  console.log(
+    `Data scraper completed successfully at ${new Date().toLocaleString()}`
+  );
 };
 
 /* manual cron scheduler (4 hours) */
